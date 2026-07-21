@@ -1,0 +1,370 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     15166,        362]
+NotebookOptionsPosition[     14648,        344]
+NotebookOutlinePosition[     15082,        361]
+CellTagsIndexPosition[     15039,        358]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"Grid", "[", 
+    RowBox[{"{", 
+     RowBox[{"{", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"Show", "[", "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{"ParametricPlot3D", "[", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"Cos", "[", "u", "]"}], " ", 
+              RowBox[{"Sin", "[", "v", "]"}]}], ",", 
+             RowBox[{
+              RowBox[{"Sin", "[", "v", "]"}], " ", 
+              RowBox[{"Sin", "[", "u", "]"}]}], ",", 
+             RowBox[{"Cos", "[", "v", "]"}]}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"u", ",", "0", ",", 
+             RowBox[{"2", "Pi"}]}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"v", ",", "0", ",", "\[Pi]"}], "}"}], ",", 
+           RowBox[{"Mesh", "\[Rule]", 
+            RowBox[{"{", 
+             RowBox[{"24", ",", "11"}], "}"}]}], ",", 
+           RowBox[{"MeshStyle", "\[Rule]", 
+            RowBox[{"RGBColor", "[", 
+             RowBox[{".33", ",", ".6", ",", ".7"}], "]"}]}], ",", 
+           RowBox[{"PlotRange", "\[Rule]", 
+            RowBox[{".8", " ", "1.25"}]}], ",", 
+           RowBox[{"PlotLabel", "\[Rule]", 
+            RowBox[{"Style", "[", 
+             RowBox[{
+              RowBox[{"Row", "[", 
+               RowBox[{"{", 
+                RowBox[{"\"\<latitude: \>\"", ",", 
+                 RowBox[{"NumberForm", "[", " ", 
+                  RowBox[{
+                   RowBox[{"57.29577951308232`", "\[Theta]"}], ",", 
+                   RowBox[{"{", 
+                    RowBox[{"3", ",", "2"}], "}"}]}], "]"}], ",", 
+                 "\"\<\[Degree]\>\""}], "}"}], "]"}], ",", "14", ",", 
+              FormBox["Yellow",
+               TraditionalForm]}], "]"}]}]}], "]"}], ",", 
+         RowBox[{"Graphics3D", "[", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"GrayLevel", "[", "1", "]"}], ",", " ", 
+              RowBox[{"Point", "[", 
+               RowBox[{"{", 
+                RowBox[{"0", ",", " ", "0", ",", " ", "1"}], "}"}], "]"}]}], 
+             "}"}], ",", " ", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"Thickness", "[", ".005", "]"}], ",", 
+              RowBox[{"RGBColor", "[", 
+               RowBox[{".27", ",", ".2", ",", ".75"}], "]"}], ",", 
+              RowBox[{"Rotate", "[", 
+               RowBox[{
+                RowBox[{"Translate", "[", 
+                 RowBox[{
+                  RowBox[{"{", 
+                   RowBox[{"Black", ",", 
+                    RowBox[{"Text", "[", 
+                    RowBox[{
+                    RowBox[{"Style", "[", 
+                    RowBox[{"\"\<x\>\"", ",", "Italic"}], "]"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"0", ",", "0", ",", 
+                    RowBox[{"-", ".5"}]}], "}"}]}], "]"}], ",", 
+                    RowBox[{"Text", "[", 
+                    RowBox[{
+                    RowBox[{"Style", "[", 
+                    RowBox[{"\"\<y\>\"", ",", "Italic"}], "]"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"0", ",", ".5", ",", "0"}], "}"}]}], "]"}], ",", 
+                    RowBox[{"Text", "[", 
+                    RowBox[{
+                    RowBox[{"Style", "[", 
+                    RowBox[{"\"\<z\>\"", ",", "Italic"}], "]"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{".5", ",", "0", ",", "0"}], "}"}]}], "]"}], ",", 
+                    "Red", ",", 
+                    RowBox[{"Arrowheads", "[", ".01", "]"}], ",", 
+                    RowBox[{"Arrow", "[", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"0", ",", "0", ",", 
+                    RowBox[{"-", ".4"}]}], "}"}]}], "}"}], "]"}], ",", 
+                    RowBox[{"Arrow", "[", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"0", ",", ".4", ",", "0"}], "}"}]}], "}"}], "]"}],
+                     ",", 
+                    RowBox[{"Arrow", "[", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{".4", ",", "0", ",", "0"}], "}"}]}], "}"}], 
+                    "]"}]}], "}"}], ",", 
+                  RowBox[{"{", 
+                   RowBox[{"1", ",", "0", ",", "0"}], "}"}]}], "]"}], ",", 
+                "\[Theta]", ",", 
+                RowBox[{"{", 
+                 RowBox[{
+                  RowBox[{"{", 
+                   RowBox[{"1", ",", "0", ",", "0"}], "}"}], ",", 
+                  RowBox[{"{", 
+                   RowBox[{"0", ",", "0", ",", "1"}], "}"}]}], "}"}]}], 
+               "]"}]}], "}"}]}], "}"}], "]"}], ",", 
+         RowBox[{"ParametricPlot3D", "[", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"Sin", "[", "\[Phi]", "]"}], ",", "0", ",", 
+             RowBox[{"Cos", "[", "\[Phi]", "]"}]}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"\[Phi]", ",", "0", ",", "\[Pi]"}], "}"}]}], "]"}], ",", 
+         RowBox[{"Background", "\[Rule]", "Black"}], ",", 
+         RowBox[{"Boxed", "\[Rule]", "False"}], ",", 
+         RowBox[{"Axes", "\[Rule]", "False"}], ",", " ", "\n", "  ", 
+         RowBox[{"ViewPoint", " ", "\[Rule]", " ", 
+          RowBox[{"{", 
+           RowBox[{"2.98", ",", " ", 
+            RowBox[{"-", "1.18"}], ",", " ", "1.08"}], "}"}]}], ",", " ", 
+         "\n", "  ", 
+         RowBox[{"ViewVertical", " ", "\[Rule]", " ", 
+          RowBox[{"{", 
+           RowBox[{"0.29", ",", " ", 
+            RowBox[{"-", "0.06"}], ",", " ", "0.95"}], "}"}]}], ",", 
+         RowBox[{"ImageSize", "\[Rule]", 
+          RowBox[{"{", 
+           RowBox[{"275", ",", "275"}], "}"}]}]}], "]"}], ",", 
+       RowBox[{"With", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\[Omega]0", "=", ".001"}], "}"}], ",", 
+         RowBox[{"ParametricPlot3D", "[", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"vx0", " ", "t"}], ",", 
+               RowBox[{
+                RowBox[{
+                 RowBox[{"-", 
+                  SuperscriptBox["t", "2"]}], " ", "vx0", " ", "\[Omega]0", 
+                 " ", 
+                 RowBox[{"Cos", "[", "\[Theta]", "]"}]}], "+", 
+                RowBox[{
+                 FractionBox["1", "3"], " ", "9.8", " ", 
+                 SuperscriptBox["t", "3"], " ", "\[Omega]0", " ", 
+                 RowBox[{"Sin", "[", "\[Theta]", "]"}]}]}], ",", 
+               RowBox[{
+                RowBox[{"-", "4.9"}], " ", 
+                SuperscriptBox["t", "2"]}]}], "}"}], ",", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"vx0", " ", "t"}], ",", "0", " ", ",", 
+               RowBox[{
+                RowBox[{"-", "4.9"}], " ", 
+                SuperscriptBox["t", "2"]}]}], "}"}]}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"t", ",", "0", ",", "tf"}], "}"}], ",", 
+           RowBox[{"BoxRatios", "\[Rule]", "1"}], ",", 
+           RowBox[{"PlotRange", " ", "->", " ", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{"-", "100."}], ",", " ", "100"}], "}"}], ",", " ", 
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{"-", "3.27"}], ",", " ", "3.27"}], "}"}], ",", " ", 
+              "\n", "    ", 
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{"-", "490"}], ",", " ", "0."}], "}"}]}], "}"}]}], ",", 
+           RowBox[{"AxesLabel", "\[Rule]", 
+            RowBox[{"{", 
+             RowBox[{"\"\<x\>\"", ",", "\"\<y\>\"", ",", "\"\<z\>\""}], 
+             "}"}]}], ",", 
+           RowBox[{"ImageSize", "\[Rule]", 
+            RowBox[{"{", 
+             RowBox[{"275", ",", "275"}], "}"}]}]}], "]"}]}], "]"}]}], "}"}], 
+     "}"}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\[Theta]", ",", 
+       RowBox[{"\[Pi]", "/", "4."}], ",", "\"\<latitude (\[Degree])\>\""}], 
+      "}"}], ",", 
+     RowBox[{
+      RowBox[{"-", "\[Pi]"}], "/", "2"}], ",", 
+     RowBox[{"\[Pi]", "/", "2"}], ",", 
+     RowBox[{"Appearance", "\[Rule]", "\"\<Labeled\>\""}]}], "}"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"vx0", ",", "10", ",", "\"\<initial velocity in x (m/s)\>\""}], 
+      "}"}], ",", 
+     RowBox[{"-", "10"}], ",", "10", ",", 
+     RowBox[{"Appearance", "\[Rule]", "\"\<Labeled\>\""}]}], "}"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"tf", ",", "10", ",", "\"\<time (s)\>\""}], "}"}], ",", "0.01", 
+     ",", "10", ",", 
+     RowBox[{"Appearance", "\[Rule]", "\"\<Labeled\>\""}]}], "}"}]}], 
+  "]"}]], "Input",
+ CellLabel->"In[1]:=",ExpressionUUID->"a8e3933e-1a19-45e8-9974-73215393fcab"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`tf$$ = 10, $CellContext`vx0$$ = 
+    8.2, $CellContext`\[Theta]$$ = 0.6597344572538564, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`\[Theta]$$], 0.7853981633974483, 
+       "latitude (\[Degree])"}, Rational[-1, 2] Pi, Rational[1, 2] Pi}, {{
+       Hold[$CellContext`vx0$$], 10, "initial velocity in x (m/s)"}, -10, 
+      10}, {{
+       Hold[$CellContext`tf$$], 10, "time (s)"}, 0.01, 10}}, 
+    Typeset`size$$ = {388.64, {94.24382326321211, 98.25617673678789}}, 
+    Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = True}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`tf$$ = 10, $CellContext`vx0$$ = 
+        10, $CellContext`\[Theta]$$ = 0.7853981633974483}, 
+      "ControllerVariables" :> {}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Grid[{{
+          Show[
+           
+           ParametricPlot3D[{
+            Cos[$CellContext`u] Sin[$CellContext`v], Sin[$CellContext`v] 
+             Sin[$CellContext`u], 
+             Cos[$CellContext`v]}, {$CellContext`u, 0, 2 Pi}, {$CellContext`v,
+              0, Pi}, Mesh -> {24, 11}, MeshStyle -> RGBColor[0.33, 0.6, 0.7],
+             PlotRange -> 0.8 1.25, PlotLabel -> Style[
+              Row[{"latitude: ", 
+                NumberForm[57.29577951308232 $CellContext`\[Theta]$$, {3, 2}],
+                 "\[Degree]"}], 14, Yellow]], 
+           Graphics3D[{{
+              GrayLevel[1], 
+              Point[{0, 0, 1}]}, {
+              Thickness[0.005], 
+              RGBColor[0.27, 0.2, 0.75], 
+              Rotate[
+               Translate[{Black, 
+                 Text[
+                  Style["x", Italic], {0, 0, -0.5}], 
+                 Text[
+                  Style["y", Italic], {0, 0.5, 0}], 
+                 Text[
+                  Style["z", Italic], {0.5, 0, 0}], Red, 
+                 Arrowheads[0.01], 
+                 Arrow[{{0, 0, 0}, {0, 0, -0.4}}], 
+                 Arrow[{{0, 0, 0}, {0, 0.4, 0}}], 
+                 Arrow[{{0, 0, 0}, {0.4, 0, 0}}]}, {1, 0, 
+                0}], $CellContext`\[Theta]$$, {{1, 0, 0}, {0, 0, 1}}]}}], 
+           ParametricPlot3D[{
+             Sin[$CellContext`\[Phi]], 0, 
+             Cos[$CellContext`\[Phi]]}, {$CellContext`\[Phi], 0, Pi}], 
+           Background -> Black, Boxed -> False, Axes -> False, 
+           ViewPoint -> {2.98, -1.18, 1.08}, 
+           ViewVertical -> {0.29, -0.06, 0.95}, ImageSize -> {275, 275}], 
+          With[{$CellContext`\[Omega]0$ = 0.001}, 
+           
+           ParametricPlot3D[{{$CellContext`vx0$$ $CellContext`t, \
+(((-$CellContext`t^2) $CellContext`vx0$$) $CellContext`\[Omega]0$) 
+               Cos[$CellContext`\[Theta]$$] + ((((1/3) 
+                  9.8) $CellContext`t^3) $CellContext`\[Omega]0$) 
+               Sin[$CellContext`\[Theta]$$], (-4.9) $CellContext`t^2}, \
+{$CellContext`vx0$$ $CellContext`t, 
+              0, (-4.9) $CellContext`t^2}}, {$CellContext`t, 
+             0, $CellContext`tf$$}, BoxRatios -> 1, 
+            PlotRange -> {{-100., 100}, {-3.27, 3.27}, {-490, 0.}}, 
+            AxesLabel -> {"x", "y", "z"}, ImageSize -> {275, 275}]]}}], 
+      "Specifications" :> {{{$CellContext`\[Theta]$$, 0.7853981633974483, 
+          "latitude (\[Degree])"}, Rational[-1, 2] Pi, Rational[1, 2] Pi, 
+         Appearance -> 
+         "Labeled"}, {{$CellContext`vx0$$, 10, 
+          "initial velocity in x (m/s)"}, -10, 10, Appearance -> 
+         "Labeled"}, {{$CellContext`tf$$, 10, "time (s)"}, 0.01, 10, 
+         Appearance -> "Labeled"}}, "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{424., {141.9938232632121, 146.0061767367879}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{3.943412083443708*^9, 3.9434147528072724`*^9},
+ CellLabel->"Out[1]=",ExpressionUUID->"dce08400-5f86-4d81-8c4e-6ae5ed95f537"]
+}, Open  ]]
+},
+WindowSize->{1024.5, 507.75},
+WindowMargins->{{-6, Automatic}, {Automatic, -6}},
+Magnification:>0.7 Inherited,
+FrontEndVersion->"13.3 for Microsoft Windows (64-bit) (July 24, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"f67a670e-27d9-4a2c-9da6-018913e73836"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 9413, 226, 245, "Input",ExpressionUUID->"a8e3933e-1a19-45e8-9974-73215393fcab"],
+Cell[9996, 250, 4636, 91, 301, "Output",ExpressionUUID->"dce08400-5f86-4d81-8c4e-6ae5ed95f537"]
+}, Open  ]]
+}
+]
+*)
+
